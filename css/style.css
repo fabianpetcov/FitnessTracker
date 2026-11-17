@@ -1,0 +1,133 @@
+/* ==========================================================
+   FitnessTracker – style.css
+   Paleta: bleumarin #0F172A, verde #22C55E, portocaliu #F97316,
+           gri deschis #F1F5F9, alb #FFFFFF
+   Fonturi: Poppins (titluri), Inter (text)
+   ========================================================== */
+
+:root {
+  --navy: #0F172A;
+  --green: #22C55E;
+  --green-dark: #16A34A;
+  --orange: #F97316;
+  --orange-dark: #EA580C;
+  --gray: #F1F5F9;
+  --white: #FFFFFF;
+  --text-soft: #CBD5E1;
+}
+
+/* ---------- Bază ---------- */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--gray);
+  color: var(--navy);
+  padding-top: 70px; /* spațiu pentru meniul fix */
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: "Poppins", sans-serif;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 2px;
+}
+
+/* ---------- Culori utilitare ---------- */
+.bg-navy { background-color: var(--navy) !important; }
+.bg-green { background-color: var(--green) !important; }
+.bg-orange { background-color: var(--orange) !important; }
+.text-green { color: var(--green); }
+.text-light-soft { color: var(--text-soft); }
+
+/* ---------- Meniu ---------- */
+.navbar .nav-link { color: var(--text-soft); }
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: var(--white); }
+.navbar .nav-link.active { border-bottom: 2px solid var(--green); }
+
+/* ---------- Butoane ---------- */
+.btn-green {
+  background-color: var(--green);
+  border-color: var(--green);
+  color: var(--navy);
+  font-weight: 600;
+}
+.btn-green:hover {
+  background-color: var(--green-dark);
+  border-color: var(--green-dark);
+  color: var(--white);
+}
+.btn-orange {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+  font-weight: 600;
+}
+.btn-orange:hover {
+  background-color: var(--orange-dark);
+  border-color: var(--orange-dark);
+  color: var(--white);
+}
+.link-green {
+  color: var(--green-dark);
+  font-weight: 500;
+  text-decoration: none;
+}
+.link-green:hover { text-decoration: underline; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background-color: var(--navy);
+  padding: 4rem 0;
+}
+.hero-card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border-top: 6px solid var(--green);
+}
+.stat-num {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* ---------- Carduri și tabel ---------- */
+.card-box {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  border: 1px solid #E2E8F0;
+}
+.card-box .table thead th {
+  background-color: var(--white);
+  color: #64748B;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border-bottom: 2px solid var(--gray);
+}
+
+/* ---------- Bare de progres (fără stiluri inline) ---------- */
+.w-68 { width: 68%; }
+.w-60 { width: 60%; }
+.progress { height: 1.25rem; background-color: var(--gray); }
+.progress-bar { font-size: 0.75rem; font-weight: 600; color: var(--navy); }
+
+/* ---------- Subsol ---------- */
+footer a {
+  color: var(--text-soft);
+  text-decoration: none;
+}
+footer a:hover { color: var(--green); }
+
+/* ---------- Responsive (telefon) ---------- */
+@media (max-width: 575.98px) {
+  .hero { padding: 2.5rem 0; }
+  .hero h1 { font-size: 1.75rem; }
+  .hero .btn-lg { width: 100%; }
+}
+
+/* Lățimi suplimentare pentru barele de progres */
+.w-67 { width: 67%; }
+.w-70 { width: 70%; }
