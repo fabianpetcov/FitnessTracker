@@ -79,7 +79,11 @@ a:focus-visible, button:focus-visible {
 /* ---------- Hero ---------- */
 .hero {
   background-color: var(--navy);
-  padding: 4rem 0;
+  background-image: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)),
+                    url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
 }
 .hero-card {
   background-color: var(--white);
@@ -131,3 +135,12 @@ footer a:hover { color: var(--green); }
 /* Lățimi suplimentare pentru barele de progres */
 .w-67 { width: 67%; }
 .w-70 { width: 70%; }
+
+/* ---------- Imagini ---------- */
+.ex-img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background-color: var(--gray);
+}
