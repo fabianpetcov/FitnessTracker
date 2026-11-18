@@ -144,3 +144,38 @@ footer a:hover { color: var(--green); }
   object-fit: cover;
   background-color: var(--gray);
 }
+
+/* ---------- Iconițe, hover și secțiuni noi ---------- */
+.stat-icon {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--green-dark);
+  margin-bottom: 0.25rem;
+}
+.step-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--navy);
+  color: var(--green);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-box.h-100 {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-box.h-100:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+.cta-band {
+  background-color: var(--navy);
+  padding: 3.5rem 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-box.h-100 { transition: none; }
+  .card-box.h-100:hover { transform: none; }
+}
